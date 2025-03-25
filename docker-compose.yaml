@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+    twitter-bot:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        volumes:
+            - ./data:/app/data
+        environment:
+            - OPENROUTER_API_KEY=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
+            - POST_INTERVAL_MIN=35
+            - POST_INTERVAL_MAX=35
+        restart: always
