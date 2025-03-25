@@ -22,7 +22,10 @@ RUN npm install -g pnpm@9.15.1 && \
     libpango-1.0-0 \
     libcairo2 \
     libasound2 \
-    libatspi2.0-0 && \
+    libatspi2.0-0 \
+    # Add sharp dependencies
+    build-essential \
+    libvips-dev && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
