@@ -26,6 +26,9 @@ services:
             - SOLANA_RPC_URL=https://api.mainnet-beta.solana.com
             - HELIUS_API_KEY=
             - SERVER_PORT=3000
+            - TWITTER_USERNAME=HanmaUnchained
+            - TWITTER_PASSWORD=mfapassword
+            - TWITTER_EMAIL=info2rayyanalex@gmail.com
         ports:
             - "3000:3000"
         restart: always
